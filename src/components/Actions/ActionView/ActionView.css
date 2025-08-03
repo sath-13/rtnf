@@ -1,0 +1,31 @@
+/* ActionView.css */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.content-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 70%;
+    max-width: 800px;
+    max-height: 95vh;  /* Limit height to 80% of the viewport */
+    overflow-y: auto;  /* Enable scrolling if content overflows */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.heading {
+    margin-bottom: 20px;
+    text-align: center;
+}

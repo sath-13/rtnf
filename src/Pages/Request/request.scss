@@ -1,0 +1,10 @@
+@use "sass:map";
+
+.system-details{
+    .table>:not(caption)>*>*{
+        border-bottom-width: 0!important;
+    }
+    td{
+        padding-bottom: 20px;
+    }
+}

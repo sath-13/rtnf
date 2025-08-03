@@ -1,0 +1,13 @@
+.initials-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    color: #333;
+    border-radius: 0%;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 84px;
+  }
+  

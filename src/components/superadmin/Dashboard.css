@@ -1,0 +1,16 @@
+.dashboard-layout {
+  height: 100vh;
+}
+.dashboard-header {
+  background: #001529;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+.dashboard-content {
+  padding: 24px;
+  background-color: #F0F2F5;
+  height: calc(100vh - 64px); /* adjust if header height changes */
+  overflow-y: auto;
+} 

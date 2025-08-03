@@ -1,0 +1,236 @@
+.compliance-survey-detail {
+  padding: 24px;
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.detail-header {
+  margin-bottom: 32px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.survey-info {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.survey-meta {
+  margin-top: 16px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.stats-section {
+  margin-bottom: 24px;
+}
+
+.stats-section .ant-card {
+  text-align: center;
+}
+
+.detail-filters {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.responses-grid {
+  margin-top: 24px;
+}
+
+.response-card {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.response-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.response-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.score-badge {
+  text-align: right;
+}
+
+.response-details {
+  margin: 16px 0;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.response-progress {
+  margin: 16px 0;
+}
+
+.loading-container,
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  gap: 16px;
+}
+
+/* Modal Styles */
+.response-modal .modal-content {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.answers-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.answer-item {
+  padding: 16px;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.answer-item:last-child {
+  margin-bottom: 0;
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  gap: 12px;
+}
+
+.answer-content {
+  background: #fafafa;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border-left: 3px solid #1890ff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .compliance-survey-detail {
+    padding: 16px;
+  }
+  
+  .header-top {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+  
+  .survey-info {
+    padding: 16px;
+  }
+  
+  .survey-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .detail-filters {
+    padding: 16px;
+  }
+  
+  .response-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .score-badge {
+    text-align: center;
+    margin-top: 8px;
+  }
+  
+  .detail-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .question-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+/* Custom scrollbar for modal and answers list */
+.modal-content::-webkit-scrollbar,
+.answers-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-track,
+.answers-list::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 3px;
+}
+
+.modal-content::-webkit-scrollbar-thumb,
+.answers-list::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+  border-radius: 3px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover,
+.answers-list::-webkit-scrollbar-thumb:hover {
+  background: #bfbfbf;
+}

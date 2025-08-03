@@ -1,0 +1,155 @@
+
+
+.rf-organization-feed {
+  /* max-width: 700px; */
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  /* box-shadow: 0 1px 6px rgb(32 33 36 / 28%); */
+}
+
+.rf-announcement-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  /* margin-bottom: 1.5rem; */
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+justify-content: center;
+}
+
+.google-calendar-button{
+  background-color: var(--btn-primary) !important;
+  color: #fff !important;
+  border: none !important;
+  text-align: center !important;
+}
+
+.google-calendar-button:hover{
+  background-color: var(--btn-primary-hover) !important;
+  border: none !important; 
+}
+
+.rf-feed-card {
+  /* border: var(--border-primary); */
+  margin-bottom: 1.2rem;
+  border-radius: 10px;
+  /* box-shadow: 0 0 8px rgb(0 0 0 / 0.1); */
+  transition: box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.rf-feed-card:hover {
+  /* box-shadow: 0 4px 12px rgb(0 0 0 / 0.15); */
+}
+
+.rf-feed-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem 0.5rem 1rem;
+  gap: 1rem;
+}
+
+.rf-feed-avatar {
+  border-radius: 50%;
+  background-color: #87d068; /* fallback background if no avatar */
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rf-feed-info p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.rf-feed-info strong {
+  font-weight: 600;
+}
+
+.rf-feed-time {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.rf-badge-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.rf-badge-icon {
+  color: #1890ff;
+  min-width: 24px;
+}
+
+.rf-badge-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #1890ff;
+}
+
+.rf-feed-description {
+  padding: 0 1rem 1rem 1rem;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+.rf-load-more {
+  margin: 1rem auto;
+  font-weight: 600;
+  color: #1890ff;
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.rf-load-more:hover {
+  color: #40a9ff;
+}
+
+
+.ant-picker-ok > .ant-btn:not(.ant-btn-disabled) {
+  background-color: var(--btn-primary);
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+
+.ant-picker-ok > .ant-btn:not(.ant-btn-disabled):hover {
+  background-color: var(--btn-primary-hover);
+}
+
+.rf-no-reminders{
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  color: #3d3d3d;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+/* .create-reminder-button{
+background-color: var(--btn-primary) !important;
+color: #fff !important;
+border: none !important
+}
+
+.create-reminder-button:hover{
+background-color: var(--btn-primary-hover) !important;
+border: none !important
+} */

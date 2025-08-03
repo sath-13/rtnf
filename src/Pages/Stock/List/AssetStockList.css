@@ -1,0 +1,38 @@
+/* Sidebar.css */
+.sidebar-container {
+   width: 15%;
+    border-right: 1px solid #eee;
+    padding: 1rem;
+    overflow-y: auto;
+    max-height: 100vh;
+    /* background-color: red; */
+  }
+
+  .scrollable-sidebar {
+    height: 400px;
+    overflow-y: auto;
+    padding-right: 8px; /* Prevent scrollbar from overlapping content */
+  }
+  
+  .filter-bar {
+    width: 150px;
+  }
+
+  .stock-header {
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 16px; */
+  }
+  
+  .stock-title {
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  .right-content{
+    width: 85%;
+  }
+  
+  
+  

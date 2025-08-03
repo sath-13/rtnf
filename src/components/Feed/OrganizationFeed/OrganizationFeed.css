@@ -1,0 +1,95 @@
+.hide-scrollbar{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.feed-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.feed-avatar {
+  background-color: var(--btn-primary);
+  margin-right: 12px;
+}
+
+.feed-info p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.receiver-name {
+  color: #007bff;
+}
+
+.feed-time {
+  font-size: 12px;
+  color: gray;
+}
+
+.badge-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.badge-icon {
+  color: #f39c12;
+  margin-right: 10px;
+}
+
+.badge-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.badge-tag {
+  font-size: 14px;
+  padding: 5px 12px;
+  margin-top: 5px;
+}
+
+
+.feed-description {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.load-more {
+  text-align: center;
+  cursor: pointer;
+  color: #1890ff;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.announcement-section {
+  /* margin: 30px 0; */
+}
+
+/* .announcement-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3d3d3d;
+  margin-bottom: 20px;
+} */
+
+.announcement-card {
+  background-color: #f9f9ff;
+  border-left: 4px solid var(--btn-primary);
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(83, 109, 254, 0.1);
+}
+
+.announcement-content {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}

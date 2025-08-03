@@ -1,0 +1,53 @@
+.hiring-card-modern {
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+}
+.hiring-card-modern:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.hiring-card-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.hiring-card-header-text h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.hiring-card-header-text .designation-text {
+  font-size: 13px;
+  color: #888;
+}
+
+.hiring-card-details p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.hiring-card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.created-time {
+  font-size: 12px;
+  color: #888;
+}
+
+.truncate {
+  max-width: 160px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,7 @@
+{
+    "questions": [
+        { "text": "What industries or projects have they worked on?", "action": "Work Experience" },
+    { "text": "What techstack or features are they proficient in?", "action": "techstack and features" },
+    { "text": "Tell me about the different teams", "action": "Teams" }
+    ]
+  }

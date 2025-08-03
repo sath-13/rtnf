@@ -1,0 +1,74 @@
+/* Notification Modal Container */
+.notification-modal .ant-modal-content {
+    max-height: 80vh; 
+    overflow-y: auto; 
+}
+
+/* Notification Table */
+.notification-modal .ant-table-container {
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+/* Notification Actions (Buttons) */
+.notification-actions {
+    display: flex;
+    gap: 8px;
+}
+
+/* Notification Bell Button */
+.notification-btn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+/* Notification Button Container */
+.notification-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent; /* Matches header background */
+    padding: 8px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+  }
+  
+  .notification-button:hover {
+    background: rgba(255, 255, 255, 0.2); /* Subtle highlight on hover */
+  }
+  
+  /* Bell Icon Styling */
+  .bell-icon {
+    font-size: 32px; 
+    font-weight: 500;
+    color: white !important;
+  }  
+
+/* Notification Header */
+.notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* Remove Scrollbar */
+.notification-modal::-webkit-scrollbar {
+    display: none;
+}
+
+/* Fix Badge Visibility */
+.custom-badge .ant-badge-count {
+    background: red !important; /* Ensure visibility */
+    color: white !important; /* Text color */
+    font-size: 12px !important; /* Make it readable */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a shadow for better visibility */
+  }
+  
+  /* Adjust Badge Position */
+  .custom-badge .ant-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }

@@ -1,0 +1,170 @@
+.compliance-survey-responses {
+  padding: 24px;
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.responses-header {
+  margin-bottom: 32px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stats-cards {
+  margin-bottom: 24px;
+}
+
+.stats-cards .ant-card {
+  text-align: center;
+}
+
+.responses-filters {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.responses-grid {
+  margin-top: 24px;
+}
+
+.response-card {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.response-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.survey-stats {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.survey-stats .ant-statistic {
+  text-align: center;
+}
+
+.recent-responses {
+  margin-top: 16px;
+}
+
+.responses-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.response-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.response-item:last-child {
+  border-bottom: none;
+}
+
+.response-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.user-icon {
+  color: #666;
+  font-size: 16px;
+}
+
+.response-details {
+  text-align: right;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .compliance-survey-responses {
+    padding: 16px;
+  }
+  
+  .header-top {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+  
+  .responses-filters {
+    padding: 16px;
+  }
+  
+  .card-header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  
+  .survey-stats .ant-col {
+    margin-bottom: 16px;
+  }
+  
+  .response-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .response-details {
+    text-align: left;
+    width: 100%;
+  }
+}
+
+/* Custom scrollbar for responses list */
+.responses-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.responses-list::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 2px;
+}
+
+.responses-list::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+  border-radius: 2px;
+}
+
+.responses-list::-webkit-scrollbar-thumb:hover {
+  background: #bfbfbf;
+}

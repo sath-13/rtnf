@@ -1,0 +1,104 @@
+/* .toast-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.toast-card-container {
+  display: flex;
+  align-items: stretch; /* Important! */
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  /* border: gray 1px solid; */
+}
+
+.left-side {
+  width: 40%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  border-radius: 20px;
+  margin: 4px;
+}
+.left-success {
+  background-color: #86c06a;
+}
+.left-error {
+  background-color: #E3322D;
+}
+
+.left-warning {
+  background-color: #F5AB23;
+}
+
+.check-icon-container {
+  margin: 0 auto;
+  height: 36px;
+  width: 36px;
+  /* background-color: #86c06a; */
+  border: 4px solid white;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-icon {
+  color: white;
+  font-size: 16px;
+}
+
+.right-side {
+  width: 80%;
+
+  /* background-color: red; */
+}
+.right-side-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  /* align-items: center; */
+}
+
+.right-side-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-side-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.right-title-success {
+  color: #86c06a;
+}
+.right-title-error {
+  color: #f44336;
+}
+
+.right-side-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-icon{
+  font-size: large;
+}
+
+.right-side-para{
+color: black;
+}
+
+/* This targets only Toastify wrapper containing your ToastCard */
+.Toastify__toast {
+  background: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  min-height: auto !important;
+}

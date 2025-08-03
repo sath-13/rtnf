@@ -1,0 +1,94 @@
+/* AssignItem.css */
+
+.assign-item-container {
+    padding-bottom: 20px;
+  }
+  
+  .assign-item-header {
+    margin-bottom: 8px;
+  }
+  
+  .assign-item-description {
+    margin-bottom: 24px;
+  }
+  
+  .assign-item-filters .ant-col {
+    margin-top: 15px;
+    margin-bottom: 16px;
+  }
+  
+  .assign-item-column-settings {
+    text-align: right;
+    margin: 16px 0;
+  }
+
+  .assign-item-column {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+  
+  .assign-item-table {
+    margin-top: 16px;
+  }
+  
+  .assign-item-pagination {
+    text-align: right;
+    margin-top: 16px;
+  }
+  
+  .assign-item-action-icon {
+    text-align: center;
+  }
+  
+  .assign-item-action-icon .anticon {
+    cursor: pointer;
+    font-size: 18px;
+    color: #ff4d4f;
+  }
+
+  .assigned-details-modal {
+    max-height: 75vh;
+    overflow-y: auto;
+    padding-right: 8px;
+  }
+  
+  .assigned-details-modal .ant-typography {
+    display: block;
+  }
+  
+  /* AssignedAssetDrawer.css */
+.assigned-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.assigned-row {
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed #d9d9d9;
+}
+
+.assigned-label {
+  font-size: 14px;
+  color: #8c8c8c;
+}
+
+.assigned-value {
+  font-weight: 600;
+  font-size: 15px;
+  color: #3f3f3f;
+}
+
+.assigned-value.empty {
+  color: #bfbfbf;
+  font-style: italic;
+}
+.search-input{
+  padding: 10px;
+}
+
+  
+  

@@ -1,0 +1,94 @@
+/* General event wrapper */
+html, body, #root, .calendar-container {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.rbc-time-content {
+  overflow-y: hidden;
+}
+
+
+.custom-event-wrapper {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* The actual card/event block */
+.custom-event {
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 13px;
+  color: white;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  word-break: break-word;
+  overflow: hidden;
+}
+
+/* Ensure event title doesn't overflow */
+.event-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+/* Month view event spacing fix */
+.rbc-month-view .rbc-event {
+  padding: 4px 6px;
+  font-size: 13px;
+  line-height: 1.2;
+  height: auto !important;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.rbc-month-row .rbc-day-bg {
+  position: relative;
+}
+
+.rbc-event {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.rbc-month-view .rbc-row-content {
+  max-height: 100px; /* Or auto + scroll */
+  overflow-y: auto;
+}
+
+
+/* Prevent collapsing */
+.rbc-row-segment {
+  margin-bottom: 4px;
+}
+
+/* Week/Day view time slot events */
+.rbc-time-content .rbc-event {
+  box-sizing: border-box;
+  padding: 4px 6px;
+  font-size: 13px;
+  border-radius: 6px;
+}
+
+/* Increase width of resource columns */
+.rbc-time-header-content {
+  min-width: 1000px; /* Adjust this value as needed */
+  display: flex;
+}
+
+.rbc-header {
+  flex: 1 0 200px; /* Minimum width for each column */
+  white-space: normal; /* Allow wrapping */
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+

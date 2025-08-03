@@ -1,0 +1,62 @@
+/* Global Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background: #f4f4f4;
+}
+
+
+/* Responsive Design for Tablets and Small Desktops */
+/* @media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+  
+  .d-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .justify-content-between {
+    justify-content: flex-start;
+    gap: 5px;
+  }
+  
+  .ant-table {
+    font-size: 14px;
+  }
+} */
+
+/* Responsive Design for Mobile Devices */
+/* @media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .ant-table {
+    font-size: 12px;
+  }
+} */
+
+.table-wrapper {
+  overflow-x: auto;
+  background-color: #f4f4f4;
+  padding-bottom: 10px;
+}
+
+/* Optional: Make sure table doesn't overflow outside */
+.ant-table {
+  min-width: 100%;
+  background-color: #ffffff; /* or transparent, depending on your design */
+}
+
+.ant-input-search .ant-input {
+  border-radius: 6px 0 0 6px !important;
+  height: 20px !important;
+}

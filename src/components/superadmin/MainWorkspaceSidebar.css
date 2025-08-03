@@ -1,0 +1,182 @@
+/* MainWorkspaceSidebar.css */
+
+/* Sidebar Container */
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background: #001529; /* Dark blue background */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: width 0.3s ease-in-out;
+  z-index: 100;
+}
+
+/* Collapsed state (if needed) */
+.sidebar.collapsed {
+  width: 80px;
+}
+
+/* Sidebar Header with Logo */
+.sidebar-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0 20px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #1890ff; /* Ant Design primary color */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Navigation Options */
+.sidebar-options {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.sidebar-item {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: rgba(255, 255, 255, 0.65);
+  border-radius: 4px;
+}
+
+.sidebar-item:hover {
+  background: #1890ff; /* Ant Design primary color */
+  color: white;
+}
+
+.sidebar-item.active {
+  background: #1890ff;
+  color: white;
+}
+
+.sidebar-icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.sidebar-item p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Collapsed state adjustments */
+.sidebar.collapsed .sidebar-item p,
+.sidebar.collapsed .user-name {
+  display: none;
+}
+
+.sidebar.collapsed .sidebar-item {
+  justify-content: center;
+  padding: 12px 0;
+  width: 60%;
+}
+
+.sidebar.collapsed .sidebar-icon {
+  margin-right: 0;
+}
+
+/* User Profile Section */
+.sidebar-user-profile-btn {
+  width: 80%;
+  padding: 12px 15px;
+  margin: 20px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+  color: rgba(255, 255, 255, 0.65);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.sidebar-user-profile-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.user-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Dropdown Menu Styling */
+.logout-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.logout-icon {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+/* Tooltip adjustments */
+.ant-tooltip-inner {
+  font-size: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 80px;
+  }
+  
+  .sidebar-item p,
+  .user-name {
+    display: none;
+  }
+  
+  .sidebar-item {
+    justify-content: center;
+    padding: 12px 0;
+    width: 60%;
+  }
+  
+  .sidebar-icon {
+    margin-right: 0;
+  }
+}

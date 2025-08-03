@@ -1,0 +1,91 @@
+/* Container for the Create Company Form */
+.create-company-card {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for form inputs */
+  .create-company-card .ant-input {
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .create-company .ant-card-body {
+    padding: 0 !important;
+  }
+  
+  /* Label style for form inputs */
+  .create-company-card .ant-form-item-label > label {
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .create-company-card .ant-btn-primary{
+    background-color: #1890ff; 
+    border-color: #1890ff; 
+    color: #fff; 
+    font-size: 16px; 
+    border-radius: 4px; 
+    padding: 10px; 
+  }
+  
+  .create-company-card .ant-btn-primary:hover{
+    background-color: #40a9ff; 
+    border-color: #40a9ff; 
+  }
+  
+  /* Loading spinner container */
+  .spin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 20px;
+    color: #1890ff;
+  }
+  
+  /* Message popups */
+  .ant-message {
+    font-size: 16px;
+    padding: 16px;
+    border-radius: 4px;
+  }
+  
+  .ant-message-error {
+    background-color: #f5222d;
+    color: white;
+  }
+  
+  /* Input field focus styling */
+  .create-company-card .ant-input:focus {
+    border-color: #40a9ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+  }
+  
+  /* Button loading spinner */
+  .ant-btn-loading-icon {
+    font-size: 18px;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .create-company-card {
+      padding: 16px;
+      width: 90%;
+    }
+  
+    .create-company-card .ant-form-item-label > label {
+      font-size: 14px;
+    }
+  
+    .create-company-card .ant-btn-primary {
+      font-size: 14px;
+    }
+  }
+  

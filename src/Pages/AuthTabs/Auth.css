@@ -1,0 +1,205 @@
+/* General container for Auth pages */
+.login-container {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  color: #fff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Box for the form input */
+.login-box {
+  flex: 1;
+  background: #f6f7ff;
+  backdrop-filter: blur(25px);
+  border-left: 1px solid #f6f7ff;
+  border-radius: 0;
+  padding: 60px 50px;
+  box-shadow: inset 0 0 20px #f6f7ff;
+}
+
+/* Left panel for the login branding */
+.login-left-panel {
+  flex: 1;
+  background-color: rgba(83, 109, 254, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 30px;
+}
+
+.login-logo {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.login-brand-title {
+  font-size: 32px;
+  color: white;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.auth-title {
+  font-size: 26px !important;
+  color: #000 !important;
+  font-weight: 600 !important;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Tabs for switching between Login and Register */
+.login-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.active-tab {
+  color: #536dfe;
+  border-bottom: 2px solid #536dfe;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+
+.link-tab {
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.link-tab:hover {
+  color: #536dfe;
+}
+
+.or-separator {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+/* Form and input styles */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-input {
+  height: 48px !important; /* Ensure same height as in register form */
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 1px solid #ccc !important;
+  border-radius: 8px !important;
+  margin-bottom: 16px;
+}
+
+/* Placeholder */
+.ant-input::placeholder {
+  color: #888 !important;
+  opacity: 1 !important;
+}
+
+/* Optional: fix password input placeholder too */
+.ant-input-password input::placeholder {
+  color: #888 !important;
+}
+
+/* Icons inside input fields */
+.input-icon {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* On focus and hover input styles */
+.auth-input:focus,
+.auth-input:hover {
+  border-color: #536dfe;
+  box-shadow: 0 0 12px rgba(30, 144, 255, 0.3);
+}
+
+/* Button style for Register and Login */
+.auth-button {
+  background: var(--btn-primary);
+  border: none !important;
+  color: #fff !important;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(30, 144, 255, 0.5);
+}
+
+.auth-button:hover {
+  background: var(--btn-primary-hover) !important;
+  color: #fff !important;
+  /* box-shadow: 0 6px 20px rgba(83, 109, 254, 0.3); */
+}
+
+/* Text for the footer or other additional links */
+.register-text {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.register-link {
+  color: #536dfe;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 5px;
+  transition: color 0.3s ease-in-out;
+}
+
+.switch-text {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #536dfe;
+}
+
+.switch-text .auth-link {
+  color: #536dfe;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.switch-text .auth-link:hover {
+  color: #000;
+}
+
+.login-footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Error message style */
+.ant-form-item-explain-error {
+  color: #ff4d4f;
+}
+
+/* Google login button style */
+.google-login-button {
+  width: 100%;
+  background-color: #4285f4;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.google-login-button:hover {
+  background-color: #357ae8;
+}

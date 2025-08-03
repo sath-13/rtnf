@@ -1,0 +1,90 @@
+.feedback-modal {
+    width: 100%;
+    max-width: 100%;
+    min-height: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 10px;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Predefined message - upper box */
+  .feedback-modal .predefined-message {
+    font-size: 16px;
+    background-color: #f5f5f5;
+    padding: 16px;
+    border-radius: 10px;
+    color: #444;
+    border: 1px solid #ddd;
+    white-space: pre-wrap;
+    overflow: hidden;
+    max-height: 150px;
+  }
+  
+  /* Feedback input box - lower input */
+  .feedback-modal .feedback-textarea {
+    flex: 1;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    resize: none;
+    margin-top: 16px;
+    overflow: auto;
+  }
+  
+  /* Hide scrollbar visually */
+  .feedback-modal .feedback-textarea::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+  
+  .feedback-modal .feedback-textarea {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
+  
+  /* Dropdown */
+  .feedback-modal .ant-select {
+    margin-top: 10px;
+  }
+  
+  /* Buttons area */
+  .feedback-modal .feedback-action-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  
+  .feedback-modal .feedback-action-buttons .ant-btn {
+    flex: 1;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+  }
+  
+  .feedback-modal .feedback-submit-btn {
+    background-color: #0aef4b;
+    color: white;
+    border: none;
+  }
+  
+  .feedback-modal .feedback-submit-btn:hover {
+    background-color: #1ac650;
+  }
+  
+  .feedback-modal .ant-btn.default {
+    background-color: #f0f0f0;
+    color: #000;
+    border: 1px solid #ccc;
+  }
+  
+  .feedback-modal .ant-btn.default:hover {
+    background-color: #e6e6e6;
+  }
+  

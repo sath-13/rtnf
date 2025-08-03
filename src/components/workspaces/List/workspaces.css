@@ -1,0 +1,9 @@
+.enter-button {
+  background-color: var(--btn-primary) !important;
+  color: #fff !important;
+}
+.enter-button:hover {
+  background-color: var(--btn-primary-hover) !important;
+}
+
+

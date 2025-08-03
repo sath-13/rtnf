@@ -1,0 +1,51 @@
+.internal-node-modal {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .internal-node-editor {
+    margin-bottom: 20px;
+  }
+  
+  /* Quill Toolbar */
+  .ql-toolbar.ql-snow {
+    border: 1px solid #d9d9d9;
+    border-radius: 10px 10px 0 0;
+    background-color: #fafafa;
+  }
+  
+  /* Quill Editor Container */
+  .ql-container.ql-snow {
+    border: 1px solid #d9d9d9;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    min-height: 250px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Button container */
+  .internal-node-action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  /* Submit Button Styling */
+  .internal-node-submit-btn {
+    background-color: #1890ff;
+    border: none;
+    padding: 8px 24px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .internal-node-submit-btn:hover {
+    background-color: #40a9ff;
+  }
+  

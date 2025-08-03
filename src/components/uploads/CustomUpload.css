@@ -1,0 +1,19 @@
+.custom-upload-container {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    min-height: 300px; /* Same height as comments section */
+    width: 100%; /* Adjust width dynamically */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .file-list {
+    flex-grow: 1;
+    margin-top: 10px;
+    max-height: 280px; /* Adjust height for scrolling */
+    overflow-y: auto;
+  }
+  

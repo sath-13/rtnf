@@ -1,0 +1,121 @@
+.event-bor {
+    max-width: 600px;
+    margin: 1.2rem auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.event-form{
+    padding-bottom: 20px;
+    border-radius: 12px;
+    background: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.custom-button{
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.button-one{
+      background: #743799;
+}
+
+.input-send{
+    height: 30px;   
+}
+
+.button-two{
+    background-color: #743799;
+    margin-top: 20px;   
+}
+
+.event-header{
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-attendance-btn {
+    margin-top: 8px;
+    background: #743799;
+    width: 100%;
+    font-weight: 600;
+}
+
+.cancelled-event{
+    background-color: #fff2f0;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #ffa39e;
+    margin-top: 12px;
+}
+.cancelled-text {
+    color: #cf1322;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.reason-text{
+    color: #cf1322;
+    margin-bottom: 0;
+}
+.event-header-past {
+    background-color: #ffc069;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cancelled-event-past{
+    background-color: #fff2f0;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #ffa39e;
+    margin-top: 12px;
+}
+.cancelled-text-past {
+    color: #cf1322;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.reason-past{
+    color: #cf1322;
+    margin-bottom: 0;
+}
+.event-header-upcoming{
+    background-color: #b5aefa;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.attendance-switch{
+    padding: 12px 16px;
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+.event-header-all{
+     background-color: #b5aefa;
+     height: 140px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.attendance-footer{
+    padding: 12px 16px;
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}

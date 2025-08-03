@@ -1,0 +1,147 @@
+[
+  {
+    "id": 1,
+    "fieldName": "employerName",
+    "name": "firstName",
+    "show": true
+  },
+  {
+    "id": 2,
+    "fieldName": "Last Name",
+    "name": "lastName",
+    "show": true
+  },
+  {
+    "id": 3,
+    "fieldName": "Email",
+    "name": "email",
+    "show": true
+  },
+  {
+    "id": 4,
+    "fieldName": "Assign By",
+    "name": "assignBy",
+    "show": false
+  },
+
+  {
+    "id": 5,
+    "fieldName": "Accessories Name",
+    "name": "accessoriesName",
+    "show": false
+  },
+  {
+    "id": 6,
+    "fieldName": "Location",
+    "name": "branch",
+    "show": false
+  },
+  {
+    "id": 7,
+    "fieldName": "Department",
+    "name": "teamTitle",
+    "show": true
+  },
+  {
+    "id": 8,
+    "fieldName": "Warranty Period",
+    "name": "warrantyPeriod",
+    "show": false
+  },
+  {
+    "id": 9,
+    "fieldName": "Product Category",
+    "name": "productCategory",
+    "show": false
+  },
+  {
+    "id": 10,
+    "fieldName": "System Model",
+    "name": "systemModel",
+    "show": false
+  },
+  {
+    "id": 11,
+    "fieldName": "Product Type",
+    "name": "productType",
+    "show": false
+  },
+  {
+    "id": 12,
+    "fieldName": "System Brand",
+    "name": "systemBrand",
+    "show": false
+  },
+  {
+    "id": 13,
+    "fieldName": "CPU",
+    "name": "cpu",
+    "show": false
+  },
+  {
+    "id": 14,
+    "fieldName": "RAM",
+    "name": "ram",
+    "show": false
+  },
+  {
+    "id": 15,
+    "fieldName": "Storage Capacity",
+    "name": "storageCapacity",
+    "show": false
+  },
+  {
+    "id": 16,
+    "fieldName": "OS",
+    "name": "os",
+    "show": false
+  },
+  {
+    "id": 17,
+    "fieldName": "MAC Address",
+    "name": "macAddress",
+    "show": false
+  },
+  {
+    "id": 18,
+    "fieldName": "Product name",
+    "name": "productname",
+    "show": false
+  },
+  {
+    "id": 19,
+    "fieldName": "Serial Number",
+    "name": "serialNumber",
+    "show": false
+  },
+  {
+    "id": 20,
+    "fieldName": "TAG",
+    "name": "tag",
+    "show": false
+  },
+  {
+    "id": 21,
+    "fieldName": "Storage Type",
+    "name": "storageType",
+    "show": false
+  },
+  {
+    "id": 22,
+    "fieldName": "Description",
+    "name": "description",
+    "show": true
+  },
+  {
+    "id": 23,
+    "fieldName": "Assign Date",
+    "name": "assignDate",
+    "show": false
+  },
+  {
+    "id": 24,
+    "fieldName": "Employee Status",
+    "name": "status",
+    "show": true
+  }
+]

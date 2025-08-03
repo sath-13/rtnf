@@ -1,0 +1,64 @@
+/* ActionDash.css */
+.action-dash-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.rich-text-editor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 300px;
+}
+
+.rich-text-editor .ql-container {
+  flex: 1;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.comment-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  min-height: 300px;
+}
+
+.action-button-section {
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .rich-text-editor, .comment-section {
+      width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  
+  .content-section {
+      flex-direction: column;
+  }
+  .rich-text-editor, .comment-section {
+      width: 100%;
+  }
+}

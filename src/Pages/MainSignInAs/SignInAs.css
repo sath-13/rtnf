@@ -1,0 +1,91 @@
+/* Container centering and background */
+.signin-landing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000; /* Pure black background */
+  color: #fff;
+  padding: 20px;
+}
+
+/* Card wrapper to control width */
+.signin-landing-card-wrapper {
+  width: 400px;
+}
+
+/* Glassmorphism Card style */
+.signin-landing-card {
+  background: rgba(255, 255, 255, 0.1); /* Glass effect */
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.signin-landing-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.25);
+}
+
+/* Title styling */
+.login-title {
+  font-size: 26px !important;
+  font-weight: bold !important;
+  color: #ffffff !important;
+  margin-bottom: 20px !important;
+}
+
+/* Button styling */
+.login-button {
+  background: #1e90ff !important;
+  border-color: #fff !important;
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-button:hover {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+/* Sidebar header and logo styles */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #45567c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+/* Fade in keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

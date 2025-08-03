@@ -1,0 +1,17 @@
+.details-banner
+{
+    height:250px;
+    width:100%;
+}
+
+.image-styles
+{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+
+}
+.project-image-wrappers
+{
+    height:100%;
+}

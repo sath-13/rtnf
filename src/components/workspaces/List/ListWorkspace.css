@@ -1,0 +1,31 @@
+/* ListWorkspace.css */
+
+/* .workspace-container {
+  width: 100%;
+  max-width: 1000px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+} */
+
+.workspace-title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.workspace-create-btn {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.workspace-table .ant-table-wrapper {
+  border-radius: 8px;
+}
+
+.workspace-table .ant-pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}

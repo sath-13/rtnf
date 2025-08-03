@@ -1,0 +1,10 @@
+.custom-help-text {
+    font-size: 12px;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.45); /* Default Ant Design secondary color */
+  }
+
+  .ant-input-password-icon {
+    color: black !important;  /* Ensures the eye icon is always visible */
+}
+  

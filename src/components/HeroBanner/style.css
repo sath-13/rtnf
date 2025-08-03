@@ -1,0 +1,122 @@
+
+.hero-container {
+    
+    width: 100%;
+    background-color: #070707;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1350px;
+    gap: 2rem;
+    position: relative;
+    padding-block: 50px;
+
+}
+
+#typing {
+    font-size: 42px;
+    color: #ffffff;  
+    min-height: 50px;  
+    transition: all 0.4s ease;
+    /* margin-bottom: 2rem; */
+    text-align: center;
+  
+}
+
+#typing {
+    margin-bottom: 0px;
+}
+
+
+
+
+.typing-container {
+  display: flex;
+  align-items: center;
+  z-index:10;
+  margin-bottom:0;
+}
+.oval-background {
+    width: 300px;
+    height: 300px;
+    background-color:rgb(73, 68, 105);
+    /* background-color: #ffffff; */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(11.5rem);
+  }
+
+  .search-bars input{
+    max-width: 650px;
+  }
+
+  .search
+  {
+    width:700px;
+  }
+
+  @media (max-width: 1024px)
+{
+  .search-bars .search
+  {
+      width:500px !important;
+  }
+}
+
+@media (max-width: 606px) {
+    .search-bars .search
+    {
+        width:300px !important;
+    }
+}
+  
+  @media (max-width: 768px) {
+    .carousel-slide {
+        flex: 0 0 100%;
+    }
+
+}
+
+@media (max-width:510px)
+{
+    .oval-background
+    {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width:1100px)
+{
+    #typing {
+        font-size: 42px;
+        
+    }
+
+}
+
+@media (max-width: 400px)
+{
+    #typing {
+        font-size: 2rem;
+    }
+}
+
+@keyframes blink {
+    from, to {
+      background-color: transparent;
+    }
+    50% {
+      background-color: white;
+    }
+  }

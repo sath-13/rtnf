@@ -1,0 +1,49 @@
+@use "sass:map";
+.tab-outer {
+  border: 1px solid $color-border;
+  border-radius: 2px;
+  padding: 15px 10px;
+  background-color: $color-white;
+  width: 130px;
+
+  .tab-icon {
+    display: block;
+    width: 40px;
+    margin: 0 auto;
+    height: 40px;
+    color: $color-shark;
+  }
+  .tab-text {
+    font-size: 14px;
+  }
+}
+
+/* Inactive tab */
+.myClass {
+  display: flex;
+  gap: 30px;
+}
+.myClass > li > button {
+  color: #343a40;
+  padding: 0;
+}
+
+/* Active tab */
+
+.myClass > li > button h6 {
+  border: 1px solid $color-border;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.myClass > li > button.active h6,
+.myClass ul > li.active > button:hover h6,
+.myClass ul > li.active > button:focus h6 {
+  background-color: $color-primary !important;
+  color: $color-white !important;
+}
+
+.myClass > li > button.active .tab-outer {
+  border: 1px solid $color-primary;
+}

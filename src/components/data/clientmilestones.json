@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "title": "Project Kickoff",
+      "description": "Initial planning and requirements gathering",
+      "status": [{ "title": "Completed", "owner": "Team", "completed": true }]
+    },
+    {
+      "id": 2,
+      "title": "Design Phase",
+      "description": "Creating wireframes and mockups",
+      "status": [{ "title": "In Progress", "owner": "Designer", "completed": false }]
+    },
+    {
+      "id": 3,
+      "title": "Development Sprint 1",
+      "description": "Core functionality implementation",
+      "status": [{ "title": "Pending", "owner": "Developers", "completed": false }]
+    },
+    {
+      "id": 4,
+      "title": "User Testing",
+      "description": "Gathering feedback from beta users",
+      "status": [{ "title": "Not Started", "owner": "QA Team", "completed": false }]
+    },
+    {
+      "id": 5,
+      "title": "Final Delivery",
+      "description": "Project handover and documentation",
+      "status": [{ "title": "Not Started", "owner": "Project Manager", "completed": false }]
+    },
+    {
+      "id": 6,
+      "title": "Post-Launch Support",
+      "description": "Monitoring and bug fixes",
+      "status": [{ "title": "Not Started", "owner": "Support Team", "completed": false }]
+    }
+  ]
+  

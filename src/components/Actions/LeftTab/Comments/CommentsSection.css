@@ -1,0 +1,123 @@
+.comments-section-container {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.comments-list {
+  max-height: 320px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+/* .delete-button {
+  background-color: rgb(255, 143, 143);
+  justify-content: end;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+} */
+
+.main-comment-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  position: relative; /* To position suggestions relative to the input */
+}
+
+textarea.mentions,
+textarea.reply-mentions {
+  flex-grow: 1;
+  min-height: 36px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px;
+  resize: none;
+  font-family: inherit;
+}
+
+.send-button {
+  color: black;
+  background-color: transparent;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-button:hover {
+  background: #9cbee3;
+}
+
+.comment-item {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.replies-list {
+  margin-left: 20px;
+}
+
+.reply-input-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 4px;
+}
+
+.comment-time {
+  font-size: 12px;
+  color: #888;
+}
+
+/* The mention suggestions dropdown */
+.mention-suggestions {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 100;
+  margin-top: 2px;
+  border-radius: 4px;
+  width: 200px;
+  left: 0; /* Make sure it aligns with the left of the input */
+  right: 0; /* Ensure it doesn't go outside the input's width */
+}
+
+.mention-suggestion {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.mention-suggestion.active,
+.mention-suggestion:hover {
+  background-color: #e6f4ff;
+}
+
+.reply-link {
+  color: #1890ff;
+  font-size: 13px;
+  cursor: pointer;
+  margin-top: 5px;
+  display: inline-block;
+}

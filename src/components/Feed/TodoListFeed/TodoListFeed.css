@@ -1,0 +1,58 @@
+.add-button {
+  background-color: #743799;
+  color: #fff !important;
+  border-radius: 6px;
+}
+
+.button {
+  width: 100%;
+  background-color: #536DFE;
+  color: #fff !important;
+  border-radius: 6px;
+}
+
+.button:hover {
+  background-color: var(--btn-primary-hover) !important;
+
+}
+
+.add-button:hover {
+  background-color: var(--btn-primary-hover) !important;
+}
+.div-wrap {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+.todo-cont {
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+.input {
+  border-radius: 6px 0 0 6px;
+}
+
+.card-text{
+  margin: "0 auto";
+  border-radius: 12px;
+}
+
+.input-addtask{
+  height: 35px;
+  border-radius: 6px 0 0 6px;
+}
+
+.re-button{
+  background-color: #743799;
+}
+
+
+.custom-cancel-button {
+  border: 1px solid #743799 !important;
+  color: #743799 !important;
+}

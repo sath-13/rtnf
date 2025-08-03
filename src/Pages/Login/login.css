@@ -1,0 +1,23 @@
+.auth-title{
+    width: 21.5ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #212121;
+    animation: cursor 1s step-start infinite,
+    text 5s steps(18) alternate infinite;
+}
+
+@keyframes cursor {
+    0%, 100% {
+        border-color: #212121;
+    }
+}
+
+@keyframes text {
+    0%{
+        width: 0;
+    }
+ 100% {
+  width: 21.5ch;  
+  }
+}

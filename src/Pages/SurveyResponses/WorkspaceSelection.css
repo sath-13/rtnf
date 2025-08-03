@@ -1,0 +1,401 @@
+/* WorkspaceSelection.css */
+.workspace-selection {
+  padding: 24px;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  gap: 16px;
+}
+
+.loading-container p {
+  color: #6c757d;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Page Header */
+.page-header {
+  background: white;
+  padding: 40px 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  margin-bottom: 32px;
+  border: 1px solid #f0f0f0;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-title-section {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.page-title-section h2 {
+  margin-bottom: 8px;
+  color: #2c3e50;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.page-title-section .ant-typography {
+  color: #6c757d;
+  font-size: 1.1rem;
+}
+
+.stats-row {
+  justify-content: center;
+}
+
+.stat-card {
+  text-align: center;
+  border: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  background: white;
+  border: 1px solid #f0f0f0;
+}
+
+.stat-card .ant-card-body {
+  padding: 20px 16px;
+}
+
+.stat-card .ant-statistic-title {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.stat-card .ant-statistic-content {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.stat-card .ant-statistic-content-value {
+  color: #667eea;
+}
+
+/* Filters */
+.filters-card {
+  margin-bottom: 32px;
+  border: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  background: white;
+  border: 1px solid #f0f0f0;
+}
+
+.filters-card .ant-card-body {
+  padding: 24px;
+}
+
+/* Workspaces Section */
+.workspaces-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Workspace Cards */
+.workspace-card {
+  border: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  height: 100%;
+  background: white;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #f0f0f0;
+}
+
+.workspace-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.workspace-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.15);
+  border-color: #667eea;
+}
+
+.workspace-card .ant-card-body {
+  padding: 24px;
+  height: calc(100% - 61px); /* Account for actions */
+  display: flex;
+  flex-direction: column;
+}
+
+.workspace-card .ant-card-actions {
+  border-top: 1px solid #f0f0f0;
+  background: #fafafa;
+  border-radius: 0 0 16px 16px;
+  padding: 12px 24px;
+}
+
+/* Workspace Header */
+.workspace-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.workspace-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 16px;
+  color: white;
+  font-size: 24px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.workspace-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.workspace-name {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #2c3e50;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+/* Workspace Stats */
+.workspace-stats {
+  flex: 1;
+  margin-bottom: 16px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6c757d;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.stat-item .anticon {
+  color: #667eea;
+  font-size: 18px;
+}
+
+.stat-item span {
+  font-weight: 500;
+}
+
+/* Workspace Footer */
+.workspace-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid #f0f0f0;
+  margin-top: auto;
+}
+
+.workspace-footer .anticon {
+  color: #667eea;
+}
+
+/* Empty State */
+.ant-empty {
+  padding: 60px 20px;
+}
+
+.ant-empty-description {
+  margin-bottom: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .workspace-selection {
+    padding: 16px;
+  }
+
+  .page-header {
+    padding: 24px 20px;
+  }
+
+  .stats-row .ant-col {
+    margin-bottom: 8px;
+  }
+
+  .workspace-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .workspace-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .workspace-stats .ant-row {
+    justify-content: center;
+  }
+
+  .stat-item {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .workspace-selection {
+    padding: 12px;
+  }
+
+  .page-header {
+    padding: 20px 16px;
+  }
+
+  .page-title-section h2 {
+    font-size: 24px;
+  }
+
+  .filters-card .ant-card-body {
+    padding: 16px;
+  }
+
+  .workspace-card .ant-card-body {
+    padding: 16px;
+  }
+
+  .workspace-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .workspace-name {
+    font-size: 16px;
+  }
+
+  .stat-item {
+    font-size: 13px;
+  }
+
+  .stat-item .anticon {
+    font-size: 14px;
+  }
+}
+
+/* Dark Mode Support */
+/* Dark mode disabled - following white theme with purple accents */
+
+/* Animation */
+.workspace-card {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Loading States */
+.ant-spin-container {
+  transition: all 0.3s ease;
+}
+
+.ant-spin-blur {
+  opacity: 0.5;
+  filter: blur(1px);
+}
+
+/* Button Overrides */
+.workspace-card .ant-btn-primary {
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: none;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  padding: 8px 20px;
+  height: auto;
+}
+
+.workspace-card .ant-btn-primary:hover {
+  transform: none;
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Divider */
+.workspace-card .ant-divider {
+  margin: 16px 0;
+}
+
+/* Tags */
+.ant-tag {
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Search and Filters */
+.ant-input-affix-wrapper {
+  border-radius: 10px;
+  border: 2px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper-focused {
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+.ant-select .ant-select-selector {
+  border-radius: 10px;
+  border: 2px solid #f0f0f0;
+}
+
+.ant-select-focused .ant-select-selector {
+  border-color: #667eea !important;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2) !important;
+}
+
+.ant-picker {
+  border-radius: 10px;
+  width: 100%;
+  border: 2px solid #f0f0f0;
+}
+
+.ant-picker:hover,
+.ant-picker-focused {
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}

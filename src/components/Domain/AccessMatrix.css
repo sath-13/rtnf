@@ -1,0 +1,20 @@
+
+  /* .matrix-table{
+    padding: 30px;
+    background-color: red;
+  } */
+  .save-matrix-button{
+    margin: 10px 0px;
+    margin-left: 10px;
+  }
+  
+  .ant-table {
+    border-radius: 8px;
+  }
+  
+  .ant-table-thead > tr > th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+  }
+  
+  

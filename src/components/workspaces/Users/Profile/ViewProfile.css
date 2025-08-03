@@ -1,0 +1,168 @@
+/* ViewProfile.css */
+
+/* Container for the profile */
+.profile-container {
+  padding: 20px;
+  background-color: #f0f2f5; /* Light background */
+  min-height: 100vh; /* Ensure full viewport height */
+  display: flex;
+  justify-content: flex-start; /* Ensure the card starts at the left */
+  align-items: flex-start; /* Align items to the top */
+  width: 100%; /* Make container take full width */
+}
+
+/* Profile card styles */
+.profile-card {
+  width: 100%; /* Take the full width of the container */
+  max-width: 1400px; /* Max width to prevent too wide on large screens */
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 24px;
+  margin-left: 20px; /* Add left margin for some spacing from edge */
+  margin-right: 20px; /* Add right margin for some spacing */
+}
+
+/* Profile Header (Keka-inspired) */
+.profile-header-keka {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.profile-header-left {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.profile-header-left > .ant-image,
+.profile-header-left > .ant-avatar {
+  margin-right: 16px;
+}
+
+.name-and-details h2 {
+  margin-bottom: 4px;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.job-details {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.job-details span {
+  margin-right: 8px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.job-details .ant-tag {
+  margin-left: 8px;
+}
+
+.profile-header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.profile-header-right .contact-info,
+.profile-header-right .company-info {
+  margin-bottom: 8px;
+  color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+}
+
+.profile-header-right .contact-info .anticon,
+.profile-header-right .company-info .anticon {
+  margin-right: 4px;
+}
+
+.profile-header-right .company-info span {
+  margin-left: 8px;
+}
+
+/* Navigation tabs for Profile */
+.profile-navigation {
+  display: flex;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 20px;
+}
+
+.profile-navigation .nav-item {
+  padding: 12px 16px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.profile-navigation .nav-item.active {
+  color: #1890ff; /* Primary color */
+  border-bottom: 2px solid #1890ff;
+}
+
+/* Profile Content Section */
+.profile-content {
+  padding: 16px 0;
+}
+
+.about-section h3,
+.performance-section h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.about-section p,
+.performance-section p {
+  color: rgba(0, 0, 0, 0.65);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+/* Styling for the Descriptions in About section */
+.about-section .ant-descriptions-bordered .ant-descriptions-row > th,
+.about-section .ant-descriptions-bordered .ant-descriptions-row > td {
+  padding: 12px 16px;
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+  .profile-card {
+    width: 100%; /* Ensure it takes full width on small screens */
+    padding: 16px;
+  }
+
+  .profile-header-keka {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-header-right {
+    align-items: flex-start;
+    margin-top: 16px;
+  }
+
+  .profile-header-right .contact-info,
+  .profile-header-right .company-info {
+    margin-bottom: 4px;
+  }
+
+  .profile-navigation {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-navigation .nav-item {
+    padding: 10px 0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .profile-content {
+    padding: 10px 0;
+  }
+}

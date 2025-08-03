@@ -1,0 +1,12 @@
+@use "sass:map";
+
+.stock-main-body{
+  .stock-available{
+    color: $color-lightGray;
+  }
+  .total-stock {
+    p{
+      color: $color-lightGray;
+    }
+  }
+}

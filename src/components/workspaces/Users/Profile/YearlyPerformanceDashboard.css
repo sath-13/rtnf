@@ -1,0 +1,64 @@
+.performance-dashboard-container {
+  padding: 24px;
+  background-color: #f9fafb;
+  border-radius: 12px;
+}
+
+.dashboard-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-card .ant-card-head {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2d3748;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0 24px;
+}
+
+.dashboard-card .ant-card-body {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.leave-summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 0.875rem;
+}
+
+.leave-summary-item .ant-tag {
+  font-weight: 500;
+}
+
+.performance-descriptions .ant-descriptions-item-label {
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.performance-descriptions .ant-descriptions-item-content {
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.dashboard-control-panel {
+  padding: 16px 24px;
+  margin-bottom: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+} 

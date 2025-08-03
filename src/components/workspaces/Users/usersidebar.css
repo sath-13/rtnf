@@ -1,0 +1,229 @@
+/* Sidebar Container */
+.sidebar {
+  width: 240px;
+  height: calc(100% - 60px);
+  position: fixed;
+  top: 60px;
+  left: 0;
+  background: var(--btn-sidebar);
+  color: #808080;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+/* Sidebar Options Wrapper */
+.sidebar-options {
+  margin-top: 20px;
+}
+
+/* Individual Sidebar Item */
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+  white-space: nowrap;
+  gap: 10px;
+}
+.sidebar-item:hover {
+  background: #2c2d30
+;
+}
+
+.sidebar-item:hover .sidebar-icon,
+.sidebar-item:hover .sidebar-text {
+  color: white;
+}
+
+.sidebar-item.active {
+  color: #007bff;
+}
+
+.sidebar-item.active .sidebar-icon {
+  color: #007bff;
+}
+
+/* Icon Styling */
+.sidebar-icon {
+  font-size: 18px;
+  color: #808080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🔥 FIXED TEXT ALIGNMENT START */
+.sidebar-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #808080;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+/* 🔥 FIXED TEXT ALIGNMENT END */
+
+.sidebar.collapsed .sidebar-icon {
+  margin-right: 0;
+}
+
+.sidebar.collapsed .sidebar-text {
+  display: none;
+}
+
+/* ✅ FIXED: User Profile Section */
+.sidebar-user-profile-btn {
+  width: 100%;
+  padding: 15px 20px;
+  background: rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s;
+}
+
+.sidebar-user-profile-btn:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.user-icon {
+  font-size: 24px;
+  color: #808080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.sidebar.collapsed .user-icon {
+  height: 20px;
+  width: 30px;
+  margin-right: 0;
+  margin-bottom: 5px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #808080;
+  display: flex;
+  align-items: center;
+  margin: 0; /* 👈 important */
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.sidebar.collapsed .user-name {
+  display: none;
+}
+
+/* Main Content Layout */
+.main-content {
+  flex-grow: 1;
+  /* padding: 0px 35px; */
+  /* padding-top: 100px; */
+  background: var(--btn-neutral);
+  min-height: 100vh;
+  overflow-y: auto;
+  margin-left: 240px;
+  width: calc(100vw - 240px);
+  transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.sidebar.collapsed ~ .main-content {
+  margin-left: 60px;
+  width: calc(100vw - 60px);
+}
+
+/* Popover Styling */
+.custom-popover {
+  background: #212225 !important;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 180px;
+}
+
+.custom-popover .ant-popover-inner {
+  background-color: #212225 !important; /* e.g., slate-800 */
+  color: white; /* Optional: change text color */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.custom-popover .ant-popover-arrow::before {
+  background-color: #212225;
+}
+
+/* Force white text in Menu */
+.custom-popover-menu .ant-menu-item {
+  color: white !important;
+  background-color: transparent !important;
+}
+
+/* Hover effect */
+.custom-popover-menu .ant-menu-item:hover {
+  background-color: #122E44 !important;
+  color: white !important;
+}
+/* Dropdown Items */
+.sidebar-mitem {
+  transition: background 0.3s;
+  gap: 10px;
+}
+
+.sidebar-mitem:hover {
+  background: #f2f2f2;
+  color: #808080;
+}
+.sidebar-mtext{
+  color: white;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+}
+
+.sidebar-micon {
+  font-size: 16px;
+  color:white;
+}
+
+/* Ant Design Tabs */
+.ant-tabs-tab {
+  font-weight: 500;
+}
+
+.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #808080 !important;
+}
+.notification-bubble {
+  position: absolute;
+  top: -4px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 12px;
+  z-index: 10;
+}
