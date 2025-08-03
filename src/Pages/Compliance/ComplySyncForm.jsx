@@ -117,10 +117,10 @@ function ComplySyncForm({ onBackToDashboard, hideBackButton = false }) {
       await createComplianceTest(payload);
       setSuccess(true);
       
-      // Navigate to dashboard after 2 seconds
-      setTimeout(() => {
-        navigateToDashboard();
-      }, 2000);
+      // // Navigate to dashboard after 2 seconds
+      // setTimeout(() => {
+      //   navigateToDashboard();
+      // }, 2000);
     } catch (err) {
       console.error("Failed to submit test:", err);
       setError("Failed to submit the test. Please try again.");
